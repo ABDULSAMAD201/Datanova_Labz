@@ -14,27 +14,27 @@ interface Step {
 const STEPS: Step[] = [
   {
     number: "01",
-    title: "Discover",
+    title: "Tell us the problem.",
     description:
-      "We learn about your business, goals, and the challenges you're trying to solve.",
+      "We ask questions until we understand your business and what is slowing it down. No technical knowledge needed.",
   },
   {
     number: "02",
-    title: "Plan",
+    title: "We agree a plan.",
     description:
-      "We create a practical solution built around your needs, workflow, and infrastructure.",
+      "You get a clear, practical plan: what we'll build, how it will work, and what it needs from you.",
   },
   {
     number: "03",
-    title: "Build",
+    title: "We build it in steps.",
     description:
-      "We develop and test the solution, keeping everything clear and on track.",
+      "You see progress along the way and can give feedback, so the result is what you actually wanted.",
   },
   {
     number: "04",
-    title: "Deliver",
+    title: "Launch and support.",
     description:
-      "We launch your solution, provide support, and make sure everything runs smoothly.",
+      "We set it up, walk you through how it works, and stay available if something needs adjusting.",
   },
 ];
 
@@ -57,9 +57,9 @@ export default function Process() {
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 md:py-24 lg:px-8">
         <Reveal>
           <SectionHeading
-            eyebrow="How We Work"
-            title={<>Our <span style={{ color: '#24B8FF' }}>Process</span></>}
-            description="A clear, structured approach to delivering solutions that work."
+            eyebrow="How we work"
+            title={<>How working with us <span style={{ color: '#24B8FF' }}>feels</span></>}
+            description="Simple, clear and no surprises. You always know what is happening and what comes next."
             align="left"
           />
         </Reveal>

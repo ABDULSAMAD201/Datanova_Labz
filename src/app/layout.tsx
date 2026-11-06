@@ -14,10 +14,14 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
+const DESCRIPTION =
+  "DataNova Labz builds live dashboards, automatic workflows and practical AI tools for growing businesses, so you spend less time on reports and more time running your company.";
+
 export const metadata: Metadata = {
   title: "DataNova Labz",
-  description:
-    "We help growing businesses turn scattered data and repetitive workflows into automated dashboards, scalable software, and AI-powered solutions. Data pipelines, Power BI, backend development, and AI automation.",
+  description: DESCRIPTION,
+  openGraph: { title: "DataNova Labz", description: DESCRIPTION },
+  twitter: { card: "summary", title: "DataNova Labz", description: DESCRIPTION },
   icons: {
     icon: [
       { url: "/favicon-16.png", sizes: "16x16", type: "image/png" },

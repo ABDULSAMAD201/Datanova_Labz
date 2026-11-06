@@ -2,12 +2,12 @@ import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
 
 const PAIN_POINTS = [
-  "Spending hours creating manual reports every week",
-  "Managing critical data across spreadsheets and tools",
-  "Repeating the same tasks and processes every single day",
-  "No real-time visibility into business performance",
-  "Software systems that don't communicate with each other",
-  "Want automation or AI but don't know where to start",
+  "Every week I lose hours building the same reports by hand.",
+  "My numbers are spread across spreadsheets and apps, and I don't fully trust them.",
+  "My team does the same repetitive tasks every single day.",
+  "I only find out about problems after they've already cost me money.",
+  "Our software doesn't talk to each other, so we copy and paste between tools.",
+  "I know AI could help my business, but I don't know where to start.",
 ];
 
 export default function ProblemsWeSolve() {
@@ -16,14 +16,13 @@ export default function ProblemsWeSolve() {
       <div className="mx-auto max-w-7xl px-4 pt-12 pb-16 sm:px-6 sm:pt-16 sm:pb-20 md:pt-20 md:pb-24 lg:px-8">
         <Reveal>
           <SectionHeading
-            eyebrow="Challenges"
+            eyebrow="Sound familiar?"
             title={
               <>
-                The Problems We{" "}
-                <span style={{ color: "#10b981" }}>Solve</span>
+                If any of this is your week,{" "}
+                <span style={{ color: "#10b981" }}>we can fix it</span>
               </>
             }
-            description="If any of these challenges sound like your business, we can help."
             align="left"
           />
         </Reveal>
@@ -128,16 +127,15 @@ export default function ProblemsWeSolve() {
         <Reveal delay={300}>
           <div className="mt-6 text-center sm:mt-8">
             <p className="mb-5 mx-auto max-w-2xl text-sm leading-relaxed text-muted sm:text-base">
-              DataNova Labz helps businesses eliminate manual work, connect
-              disconnected systems, and build automated solutions that save time
-              and deliver real insights.
+              You don&apos;t need to know the technical answer. Tell us the problem,
+              and we&apos;ll work out the solution and build it.
             </p>
             <a
               href="#contact"
               className="sparkle-btn inline-flex items-center justify-center rounded-2xl px-8 py-4 text-base font-bold transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_0_24px_rgba(9,179,228,0.45)]"
               style={{ backgroundColor: "#09b3e4", color: "#0a1628" }}
             >
-              Contact Us
+              Describe your problem
             </a>
           </div>
         </Reveal>

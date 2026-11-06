@@ -1,11 +1,11 @@
 import { ArrowRight } from "lucide-react";
-import { btnPrimary } from "./ui";
+import { btnPrimary, btnSecondary } from "./ui";
 
 const CAPABILITIES = [
-  "Data Pipelines & ETL",
-  "Power BI Dashboards",
-  "Backend & APIs",
-  "AI & Automation",
+  "Custom software",
+  "Connected systems",
+  "AI assistants",
+  "Smart dashboards",
 ];
 
 function CapabilityCard({ label, index }: { label: string; index: number }) {
@@ -60,11 +60,17 @@ export default function Hero() {
         <div className="grid gap-10 lg:grid-cols-[1fr_1fr] lg:items-center lg:gap-16">
           {/* ── LEFT: Editorial text ── */}
           <div className="flex flex-col text-left">
+            <p
+              className="mb-4 text-xs font-semibold uppercase tracking-[0.18em] sm:text-sm"
+              style={{ color: "#24B8FF", fontFamily: "var(--font-gambetta)" }}
+            >
+              Backend, automation and AI development
+            </p>
             <h1
               className="max-w-[540px] text-[1.75rem] leading-[1.1] tracking-tight text-frost sm:text-4xl md:text-5xl lg:text-[3.35rem]"
               style={{ fontFamily: "var(--font-tanker)" }}
             >
-              Turn Your Data and Manual Processes Into{" "}
+              Turn your busywork into{" "}
               <span
                 style={{
                   background: "linear-gradient(90deg, #38bdf8 0%, #f97316 50%, #38bdf8 100%)",
@@ -73,7 +79,7 @@ export default function Hero() {
                   backgroundClip: "text",
                 }}
               >
-                Automated, Intelligent Systems
+                software that runs itself.
               </span>
             </h1>
 
@@ -81,23 +87,30 @@ export default function Hero() {
               className="mt-6 max-w-lg text-sm leading-relaxed sm:text-base md:text-lg"
               style={{ color: "#B0B8C8", fontFamily: "var(--font-gambetta)" }}
             >
-              We help growing businesses bring their data and everyday work into one place with
-              simple dashboards, reliable software, and practical AI solutions so you can work
-              smarter, make better decisions, and focus on what really matters.
+              DataNova Labz designs and builds the backend systems, integrations and AI tools that
+              connect your software, automate repetitive work and grow with your business. Need
+              clear reporting on top? We build the dashboards too.
             </p>
 
 
 
             {/* CTA */}
-            <div className="mt-10">
+            <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
               <a
-                href="#projects"
+                href="#contact"
                 className={`${btnPrimary} inline-flex min-w-[200px] justify-center`}
               >
-                View Our Work
+                Tell us your problem
                 <ArrowRight className="size-4" aria-hidden="true" />
               </a>
+              <a
+                href="#projects"
+                className={`${btnSecondary} inline-flex min-w-[200px] justify-center`}
+              >
+                See what we&apos;ve built
+              </a>
             </div>
+
           </div>
 
           {/* ── Capability cards (2×2 grid) ── */}

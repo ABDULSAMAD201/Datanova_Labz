@@ -77,13 +77,13 @@ export default function Contact() {
                 Contact Us
               </span>
               <h3 className="font-display text-xl font-bold tracking-tight text-frost sm:text-2xl">
-                Let&apos;s Talk About Your Project
+                Tell us what&apos;s slowing you down
               </h3>
               <p className="mt-2 text-sm font-medium" style={{ color: '#24B8FF' }}>
                 Smarter systems. Faster decisions.
               </p>
               <p className="mt-3 max-w-xl text-sm leading-relaxed text-muted sm:text-base">
-                Tell us what you&apos;re working on, what&apos;s slowing you down, or what you&apos;d like to improve. Let&apos;s build the right solution for your business.
+                No technical language needed. Describe the problem in your own words, and we&apos;ll tell you honestly whether we can help and how.
               </p>
 
               <div className="mt-8 space-y-3 sm:mt-9">

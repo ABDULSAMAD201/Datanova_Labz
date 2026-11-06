@@ -7,6 +7,8 @@ import SectionHeading from "./SectionHeading";
 interface Review {
   initials: string;
   username: string;
+  name: string;
+  headline: string;
   country: string;
   rating: number;
   text: string;
@@ -16,6 +18,8 @@ const REVIEWS: Review[] = [
   {
     initials: "DS",
     username: "davidsusina",
+    name: "David S.",
+    headline: "A big Power BI project, finished in under 24 hours",
     country: "Slovakia",
     rating: 5,
     text: "I was in a desperate time crunch and needed help with a big Power BI project. DataNova Labz managed it exceptionally well in less than 24 hours, always on call and meeting all requirements.",
@@ -23,6 +27,8 @@ const REVIEWS: Review[] = [
   {
     initials: "KR",
     username: "karthickreddy11",
+    name: "Karthick R.",
+    headline: "Built and improved exactly as required",
     country: "United States",
     rating: 5,
     text: "Professional, responsive, and very supportive throughout. They built and improved the dashboard exactly as required, explained the logic clearly, and made quick revisions. Great experience overall.",
@@ -30,6 +36,8 @@ const REVIEWS: Review[] = [
   {
     initials: "SH",
     username: "shaddykhan452",
+    name: "Shaddy K.",
+    headline: "Delivered exactly what I needed, on time",
     country: "Lithuania",
     rating: 5,
     text: "Excellent experience! Very professional, responsive, and delivered exactly what I needed on time. High-quality work with great attention to detail. I would definitely recommend and use their services again.",
@@ -37,6 +45,8 @@ const REVIEWS: Review[] = [
   {
     initials: "R",
     username: "raspas86",
+    name: "R.",
+    headline: "A final dashboard that turned out really well",
     country: "Spain",
     rating: 5,
     text: "Extremely happy with DataNova Labz! They were a pleasure to work with — always helpful, professional, and focused on delivering a great result. The final dashboard turned out really well.",
@@ -44,6 +54,8 @@ const REVIEWS: Review[] = [
   {
     initials: "TP",
     username: "tjeerdprins",
+    name: "Tjeerd P.",
+    headline: "Very good communication and quick response",
     country: "Netherlands",
     rating: 5,
     text: "Very good communication, quick response time, and high quality output. Would definitely recommend.",
@@ -51,6 +63,8 @@ const REVIEWS: Review[] = [
   {
     initials: "X",
     username: "xavotech",
+    name: "Xavo",
+    headline: "A simple process and a result beyond expectations",
     country: "United Kingdom",
     rating: 5,
     text: "DataNova Labz delivered an excellent dashboard and made the entire process simple and straightforward. Communication was great, the work was completed on time, and the final result exceeded my expectations.",
@@ -103,7 +117,7 @@ function ReviewCard({ review, index }: { review: Review; index: number }) {
 
             <div className="min-w-0 flex-1">
               <p className="text-sm font-semibold text-frost leading-tight">
-                {review.username}
+                {review.name}
               </p>
               <p className="mt-0.5 text-xs text-muted">
                 {review.country}
@@ -116,9 +130,14 @@ function ReviewCard({ review, index }: { review: Review; index: number }) {
             <Stars rating={review.rating} />
           </div>
 
+          {/* Headline */}
+          <p className="mt-3 text-sm font-bold text-frost sm:text-base">
+            {review.headline}
+          </p>
+
           {/* Review text */}
           <p
-            className="mt-3 flex-1 text-sm leading-relaxed sm:text-[15px]"
+            className="mt-2 flex-1 text-sm leading-relaxed sm:text-[15px]"
             style={{ color: "#B8C3D6" }}
           >
             &ldquo;{review.text}&rdquo;
@@ -136,8 +155,8 @@ export default function ClientReviews() {
         <Reveal>
           <SectionHeading
             eyebrow="Client Reviews"
-            title={<>What Our <span style={{ color: "#facc15" }}>Clients</span> Say</>}
-            description="Real feedback from real clients across the globe."
+            title={<>What our <span style={{ color: "#facc15" }}>clients</span> say</>}
+            description="Feedback from clients in the US, UK, Spain, the Netherlands, Slovakia and Lithuania."
             align="left"
           />
         </Reveal>

@@ -14,10 +14,10 @@ interface Metric {
 }
 
 const METRICS: Metric[] = [
-  { value: 40, suffix: "+", label: "Projects Delivered\nfor Clients", viz: "bars" },
-  { value: 30, suffix: "+", label: "Power BI Dashboards\nBuilt", viz: "dashboard" },
-  { value: 100, suffix: "+", label: "Hours Saved\nThrough Automation", viz: "ring" },
-  { value: 8, suffix: "+", label: "Industries\nServed", viz: "dots", labelColor: "#9CA3AF" },
+  { value: 40, suffix: "+", label: "projects delivered\nfor clients", viz: "bars" },
+  { value: 30, suffix: "+", label: "live dashboards\nbuilt", viz: "dashboard" },
+  { value: 100, suffix: "+", label: "hours saved through\nautomation", viz: "ring" },
+  { value: 8, suffix: "+", label: "industries\nserved", viz: "dots", labelColor: "#9CA3AF" },
 ];
 
 /* ── Mini visualizations (SVG) ──────────────────────────────────── */

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useCallback } from "react";
-import { AlertCircle, TrendingUp } from "lucide-react";
+import { AlertCircle, Wrench, TrendingUp } from "lucide-react";
 import type { Project } from "@/data/projects";
 
 interface ProjectCardProps {
@@ -143,31 +143,39 @@ export default function ProjectCard({ project, index, onOpen }: ProjectCardProps
                 {project.title}
               </h3>
 
-              {/* Challenge & Result — fixed height so all cards match */}
-              <div className="mt-5 grid flex-1 grid-cols-2 items-stretch gap-4">
-                {/* Challenge */}
-                <div className="flex flex-col overflow-hidden rounded-lg border border-[#ef4444]/10 bg-[#ef4444]/5 p-3.5">
+              {/* The problem / What we built / What changed */}
+              <div className="mt-5 grid flex-1 grid-cols-1 items-stretch gap-3 sm:grid-cols-3">
+                <div className="flex flex-col overflow-hidden rounded-lg border border-[#ef4444]/10 bg-[#ef4444]/5 p-3">
                   <div className="flex items-center gap-1.5">
-                    <AlertCircle className="size-3.5 shrink-0 text-[#ef4444]" aria-hidden="true" />
+                    <AlertCircle className="size-3.5 shrink-0 text-[#ef4444]/80" aria-hidden="true" />
                     <span className="text-[10px] font-semibold uppercase tracking-wider text-[#ef4444]/80">
-                      Challenge
+                      The problem
                     </span>
                   </div>
                   <p className="mt-1.5 flex-1 overflow-hidden text-xs leading-relaxed text-white">
-                    {project.problem}
+                    {project.card.problem}
                   </p>
                 </div>
-
-                {/* Result */}
-                <div className="flex flex-col overflow-hidden rounded-lg border border-emerald-400/10 bg-emerald-400/5 p-3.5">
+                <div className="flex flex-col overflow-hidden rounded-lg border border-[#38bdf8]/10 bg-[#38bdf8]/5 p-3">
+                  <div className="flex items-center gap-1.5">
+                    <Wrench className="size-3.5 shrink-0 text-[#38bdf8]/80" aria-hidden="true" />
+                    <span className="text-[10px] font-semibold uppercase tracking-wider text-[#38bdf8]/80">
+                      What we built
+                    </span>
+                  </div>
+                  <p className="mt-1.5 flex-1 overflow-hidden text-xs leading-relaxed text-white">
+                    {project.card.built}
+                  </p>
+                </div>
+                <div className="flex flex-col overflow-hidden rounded-lg border border-emerald-400/10 bg-emerald-400/5 p-3">
                   <div className="flex items-center gap-1.5">
                     <TrendingUp className="size-3.5 shrink-0 text-emerald-400/80" aria-hidden="true" />
                     <span className="text-[10px] font-semibold uppercase tracking-wider text-emerald-400/80">
-                      Result
+                      What changed
                     </span>
                   </div>
                   <p className="mt-1.5 flex-1 overflow-hidden text-xs leading-relaxed text-white">
-                    {project.outcome[0]}
+                    {project.card.changed}
                   </p>
                 </div>
               </div>
@@ -178,7 +186,7 @@ export default function ProjectCard({ project, index, onOpen }: ProjectCardProps
                   className="text-xs font-medium text-[#38bdf8]/70 transition-all duration-300"
                   style={{ opacity: hovered ? 1 : 0, transform: hovered ? "translateY(0)" : "translateY(4px)" }}
                 >
-                  Explore Project →
+                  See the full story →
                 </span>
                 <div className="flex flex-wrap justify-end gap-1">
                   {project.tech.slice(0, 3).map((t) => (

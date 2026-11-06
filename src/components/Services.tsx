@@ -11,47 +11,47 @@ interface Service {
 
 const SERVICES: Service[] = [
   {
-    title: "Data Engineering & ETL",
+    title: "See your whole business on one screen",
     description:
-      "We connect, clean, and automate your data so your business can make decisions using reliable information.",
+      "We replace messy spreadsheets and weekly manual reports with live dashboards that update by themselves.",
     outcomes: [
-      "Automated data pipelines that replace manual exports",
-      "Clean, centralized data ready for reporting",
-      "Scheduled workflows that keep data fresh",
-      "Reliable data flow from multiple sources",
+      "Your key numbers on one screen, always current",
+      "No more rebuilding the same report every week",
+      "Clear charts your whole team can read without training",
+      "Faster, better-informed decisions",
     ],
   },
   {
-    title: "Power BI & Business Intelligence",
+    title: "Get all your data in one trusted place",
     description:
-      "Turn scattered spreadsheets and business data into interactive dashboards and real-time insights.",
+      "We collect data from your different tools and files, clean it, and keep it up to date automatically.",
     outcomes: [
-      "Interactive dashboards instead of static spreadsheets",
-      "Real-time visibility into business performance",
-      "KPIs and metrics at a glance",
-      "Better, faster decision-making across teams",
+      "No more manual exports and copy-pasting",
+      "One reliable version of the truth",
+      "Data refreshed on a schedule, without anyone remembering to do it",
+      "Problem records flagged instead of silently breaking your reports",
     ],
   },
   {
-    title: "Backend & API Development",
+    title: "Make your software work together",
     description:
-      "Build scalable backend systems, APIs, and integrations that connect your tools and support your business growth.",
+      "We connect the tools you already use and build custom software where off-the-shelf options fall short.",
     outcomes: [
-      "Custom APIs that connect your software systems",
-      "Scalable backends that grow with your business",
-      "Database solutions optimized for your needs",
-      "Integrations that eliminate manual data transfers",
+      "Information flows between your systems by itself",
+      "Custom tools built around how you actually work",
+      "Systems that keep working as your business grows",
+      "Less double entry, fewer mistakes",
     ],
   },
   {
-    title: "AI Agents & Automation",
+    title: "Let AI handle the repetitive work",
     description:
-      "Automate repetitive workflows and build AI-powered systems that save time and reduce manual work.",
+      "We build practical AI assistants and automations for specific jobs, such as answering questions from your documents or handling routine tasks.",
     outcomes: [
-      "AI-powered tools that handle repetitive tasks",
-      "Workflow automation that saves hours every week",
-      "Intelligent systems that learn from your data",
-      "Custom AI solutions tailored to your business",
+      "Hours of repetitive work taken off your team",
+      "AI tools trained on your own information",
+      "Workflows that run on their own, day and night",
+      "A realistic plan, not hype: we only suggest AI where it pays off",
     ],
   },
 ];
@@ -62,9 +62,9 @@ export default function Services() {
       <div className="mx-auto max-w-[1240px] px-5 py-20 sm:px-6 sm:py-24 md:py-28 lg:px-8">
         <Reveal>
           <SectionHeading
-            eyebrow="What We Do"
-            title={<>Technology That Works for <span style={{ color: '#facc15' }}>You</span></>}
-            description="We build practical solutions that simplify your work and help your business run better."
+            eyebrow="What we do"
+            title={<>Four ways we give you your time and <span style={{ color: '#facc15' }}>clarity back</span></>}
+            description="Tell us which of these sounds like your problem. Most clients start with one and add more later."
             align="left"
           />
         </Reveal>
@@ -117,7 +117,7 @@ export default function Services() {
                       color: "#24B8FF",
                     }}
                   >
-                    Business Outcomes
+                    What you get
                   </p>
                   <ul style={{ display: "flex", flexDirection: "column", gap: 10 }}>
                     {service.outcomes.map((outcome) => (
@@ -152,6 +152,18 @@ export default function Services() {
             </Reveal>
           ))}
         </div>
+
+        <Reveal delay={200}>
+          <div className="mt-8 text-center sm:mt-10">
+            <a
+              href="#contact"
+              className="sparkle-btn inline-flex items-center justify-center rounded-2xl px-8 py-4 text-base font-bold transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_0_24px_rgba(9,179,228,0.45)]"
+              style={{ backgroundColor: "#09b3e4", color: "#0a1628" }}
+            >
+              Not sure which one you need? Tell us the problem.
+            </a>
+          </div>
+        </Reveal>
       </div>
     </section>
   );

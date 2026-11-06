@@ -60,8 +60,8 @@ export default function Technologies() {
         <Reveal>
           <SectionHeading
             eyebrow="Our Stack"
-            title={<>Technologies We Work <span style={{ color: '#f97316' }}>With</span></>}
-            description="From design to development, these are the tools and technologies we use to turn ideas into real-world solutions."
+            title={<>Built with trusted, <span style={{ color: '#f97316' }}>widely used tools</span></>}
+            description="You don't need to know these. We choose well-supported tools so your system is reliable and easy to maintain and extend later."
             align="left"
           />
         </Reveal>

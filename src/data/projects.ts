@@ -17,6 +17,8 @@ export interface SolutionBlock {
 
 export interface Project {
   id: string;
+  /** Plain-language copy shown on the project card */
+  card: { problem: string; built: string; changed: string };
   title: string;
   category: string;
   overview: string;
@@ -37,8 +39,16 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: "aviation-weather-pipeline",
-    title: "Aviation Weather Data Pipeline",
-    category: "Data Engineering / Aviation",
+    title: "Always-current weather for flight planning",
+    category: "Aviation",
+    card: {
+      problem:
+        "Flight teams need up-to-date weather for specific flights, but it was being processed by hand across many airports, which was slow and easy to fall behind on.",
+      built:
+        "A system that collects and refreshes weather information for each airport automatically.",
+      changed:
+        "The manual work is gone and the weather information stays current without anyone chasing it.",
+    },
     overview:
       "An automated ETL pipeline that processes aviation and weather data to provide flight-specific weather information for aviation users.",
     problem:
@@ -78,8 +88,16 @@ export const projects: Project[] = [
   },
   {
     id: "notam-caching-system",
-    title: "NOTAM Data Caching System",
-    category: "Data Engineering / Backend",
+    title: "Cutting storage costs for flight notices at 8,000+ airports",
+    category: "Aviation",
+    card: {
+      problem:
+        "The client works with official safety notices sent to pilots (called NOTAMs) for more than 8,000 airports. Storing and re-handling all that data again and again was driving up cloud storage and running costs.",
+      built:
+        "A smarter way of storing and reusing that data, so the same information isn't processed repeatedly.",
+      changed:
+        "Less unnecessary storage and lower infrastructure overhead for a very large dataset.",
+    },
     overview:
       "A backend data caching system designed to efficiently manage NOTAM data from thousands of airports.",
     problem:
@@ -107,8 +125,16 @@ export const projects: Project[] = [
   },
   {
     id: "multi-source-etl-pipeline",
-    title: "Automated Multi-Source ETL Pipeline",
-    category: "Data Engineering / ETL",
+    title: "Replacing manual data exports with one automatic process",
+    category: "Data automation",
+    card: {
+      problem:
+        "Information came from several places (business apps, databases and spreadsheet files) and was moved by hand with one-off scripts. Reports could be up to 24 hours behind, and nobody could see which records had failed.",
+      built:
+        "A scheduled process that gathers the data, checks it, and flags bad records automatically.",
+      changed:
+        "Manual exports are replaced by a repeatable, tested process, and problem records are now visible instead of hidden.",
+    },
     overview:
       "A fully automated ETL pipeline designed to replace manual and ad hoc data movement with a reliable scheduled workflow.",
     problem:
@@ -134,8 +160,16 @@ export const projects: Project[] = [
   },
   {
     id: "ai-sql-assistant",
-    title: "AI-Powered SQL Assistant",
-    category: "AI / Backend / Developer Tools",
+    title: "Ask for data in plain English, get the answer",
+    category: "Developer Tools",
+    card: {
+      problem:
+        "Writing and fixing database queries (SQL) by hand takes time, and people who aren't database experts get stuck.",
+      built:
+        "An AI assistant that turns a plain-language request into a working database query, and also fixes and speeds up existing ones.",
+      changed:
+        "Getting answers from a database is faster and no longer depends on having an expert on hand.",
+    },
     overview:
       "An AI-powered SQL assistant for generating, optimizing, and troubleshooting SQL queries.",
     problem:
@@ -170,8 +204,16 @@ export const projects: Project[] = [
   },
   {
     id: "medical-rag-chatbot",
-    title: "Medical RAG Chatbot",
-    category: "AI / Backend",
+    title: "A chatbot that answers from your own documents",
+    category: "Document Search",
+    card: {
+      problem:
+        "Teams with piles of PDFs lose hours searching for one answer, especially in fields like healthcare where accuracy matters.",
+      built:
+        "A chatbot that reads your documents and answers questions using only what is in them, so answers stay grounded in your own material.",
+      changed:
+        "Searching through documents by hand is replaced by asking a question and getting a direct answer.",
+    },
     capabilities: [
       "PDF ingestion and document chunking",
       "Semantic embeddings",
@@ -207,8 +249,16 @@ export const projects: Project[] = [
   },
   {
     id: "multi-agent-ai-system",
-    title: "Multi-Agent AI System",
-    category: "AI / Backend",
+    title: "AI helpers that finish multi-step tasks",
+    category: "Task Automation",
+    card: {
+      problem:
+        "Ordinary chatbots lose track when a job has several steps, and they can't look up current information.",
+      built:
+        "A team of coordinated AI helpers: one plans the job, others look things up and complete the steps, and the results are combined.",
+      changed:
+        "A working example of AI that carries a task from start to finish and uses up-to-date information along the way.",
+    },
     capabilities: [
       "Multi-agent orchestration",
       "LangGraph-based workflow",

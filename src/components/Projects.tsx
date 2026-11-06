@@ -17,9 +17,9 @@ export default function Projects() {
       <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-24 md:py-28 lg:px-8">
         <Reveal>
           <SectionHeading
-            eyebrow="Our Work"
-            title={<><span style={{ color: '#D4C5A9' }}>Projects</span></>}
-            description="See how we've helped businesses solve data challenges, automate workflows, and build intelligent systems."
+            eyebrow="Our work"
+            title={<>Real problems <span style={{ color: '#D4C5A9' }}>we&apos;ve solved</span></>}
+            description="Each project below starts with the business problem, not the technology. The tools we used are listed small at the bottom of each card."
             align="left"
           />
         </Reveal>
@@ -30,6 +30,19 @@ export default function Projects() {
               <ProjectCard project={project} index={i} onOpen={setSelected} />
             </Reveal>
           ))}
+        </div>
+
+        <div className="mt-10 text-center sm:mt-12">
+          <p className="mb-5 text-sm text-muted sm:text-base">
+            Facing a problem like one of these?
+          </p>
+          <a
+            href="#contact"
+            className="sparkle-btn inline-flex items-center justify-center rounded-2xl px-8 py-4 text-base font-bold transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_0_24px_rgba(9,179,228,0.45)]"
+            style={{ backgroundColor: "#09b3e4", color: "#0a1628" }}
+          >
+            Let&apos;s solve yours →
+          </a>
         </div>
 
         <DashboardGallery />

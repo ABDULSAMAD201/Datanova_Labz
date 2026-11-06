@@ -232,19 +232,22 @@ function DashboardTablet({
                   style={{ transform: hovered ? "translateY(0)" : "translateY(8px)" }}
                 >
                   <Eye className="size-4" aria-hidden="true" />
-                  View Details
+                  See this dashboard
                 </span>
               </div>
             </div>
 
             {/* Bottom bar */}
             <div className="flex items-center justify-between gap-2 border-t border-[#1a2a4a] px-4 py-3 sm:px-5">
-              <p
-                className="min-w-0 truncate text-sm font-bold tracking-tight text-white"
-                style={{ fontFamily: "var(--font-tanker)" }}
-              >
-                {item.name}
-              </p>
+              <div className="min-w-0">
+                <p
+                  className="truncate text-sm font-bold tracking-tight text-white"
+                  style={{ fontFamily: "var(--font-tanker)" }}
+                >
+                  {item.name}
+                </p>
+                <p className="mt-1 text-xs leading-snug text-[#94a3b8]">{item.caption}</p>
+              </div>
               <span className="shrink-0 rounded-full border border-[#38bdf8]/20 bg-[#38bdf8]/10 px-2.5 py-0.5 text-[11px] font-medium text-[#38bdf8] sm:text-xs">
                 {item.industry}
               </span>
@@ -270,15 +273,15 @@ export default function DashboardGallery() {
       <Reveal>
         <div className="flex flex-col items-start gap-3 text-left sm:gap-4">
           <span className="inline-flex w-fit items-center rounded-full px-4 py-1.5 text-[10px] font-semibold uppercase tracking-[0.18em] sm:text-xs" style={{ color: '#09b3e4', border: '1px solid #09b3e4' }}>
-            Power BI Showcase
+            Dashboards
           </span>
           <h3 className="px-2 font-display text-xl font-bold tracking-tight text-frost sm:text-2xl md:text-3xl">
-            30+ Dashboards Across Multiple <span style={{ color: '#C4B5A0' }}>Industries</span>
+            30+ dashboards that turn raw numbers into <span style={{ color: '#C4B5A0' }}>clear answers</span>
           </h3>
           <p className="max-w-2xl text-sm leading-relaxed text-muted sm:text-base">
-            We have built Power BI dashboards for a range of business and
-            operational use cases, transforming raw data into interactive
-            reporting and decision-making tools.
+            A dashboard is one screen that shows how your business is doing, updated
+            automatically. Here are some we&apos;ve built. Each one answers a question an
+            owner actually asks.
           </p>
         </div>
       </Reveal>
@@ -293,12 +296,14 @@ export default function DashboardGallery() {
 
       <Reveal>
         <p className="mt-6 text-center text-sm text-muted sm:mt-8">
-          30+ Power BI dashboards built across{" "}
+          Built for{" "}
           <span className="text-frost">
-            finance, healthcare, logistics, marketing, operations, and
-            e-commerce
-          </span>
-          .
+            finance, healthcare, logistics, marketing, operations and e-commerce
+          </span>{" "}
+          teams. Want one for your business?{" "}
+          <a href="#contact" className="font-semibold text-accent hover:underline">
+            Tell us what you need to see
+          </a>
         </p>
       </Reveal>
 

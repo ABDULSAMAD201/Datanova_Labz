@@ -24,7 +24,7 @@ export default function Footer() {
               DataNova<span className="text-accent"> Labz</span>
             </p>
             <p className="mt-2 text-sm leading-relaxed text-muted">
-              Turning data and manual processes into automated, intelligent systems.
+              We turn messy data and repetitive work into systems that run on their own.
             </p>
           </div>
 

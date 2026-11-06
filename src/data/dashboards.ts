@@ -8,6 +8,7 @@ export interface DashboardItem {
   id: string;
   name: string;
   industry: string;
+  caption: string;
   image: string;
   overview: string;
   capabilities: string[];
@@ -18,7 +19,8 @@ export const dashboards: DashboardItem[] = [
   {
     id: "ai-forecast-01",
     name: "AI Forecast & Anomaly Dashboard",
-    industry: "AI / Analytics",
+    industry: "Forecasting",
+    caption: "Where are my numbers heading, and is anything behaving strangely?",
     image: "/dashboards/finance-performance.png",
     overview:
       "Analytics dashboard for forecast monitoring, anomaly detection, and KPI analysis.",
@@ -34,6 +36,7 @@ export const dashboards: DashboardItem[] = [
     id: "logistics-01",
     name: "Logistics and Fulfillment Dashboard",
     industry: "Logistics",
+    caption: "Are orders going out on time, and where are the delays?",
     image: "/dashboards/logistics-fulfillment.png",
     overview:
       "Power BI dashboard for monitoring logistics and fulfillment performance.",
@@ -49,7 +52,8 @@ export const dashboards: DashboardItem[] = [
   {
     id: "executive-overview-01",
     name: "Executive Overview Dashboard",
-    industry: "Executive / Finance",
+    industry: "Management",
+    caption: "How is the whole business doing, on one screen?",
     image: "/dashboards/healthcare-operations.png",
     overview:
       "Executive dashboard providing a consolidated view of revenue, costs, profitability, and business performance.",
@@ -65,6 +69,7 @@ export const dashboards: DashboardItem[] = [
     id: "marketing-01",
     name: "Marketing Funnel Dashboard",
     industry: "Marketing",
+    caption: "Where do potential customers drop off before buying?",
     image: "/dashboards/marketing-funnel.png",
     overview:
       "Power BI dashboard for monitoring marketing performance and funnel activity.",
@@ -80,6 +85,7 @@ export const dashboards: DashboardItem[] = [
     id: "operations-01",
     name: "Operations Monitoring Dashboard",
     industry: "Operations",
+    caption: "What is slowing the team down right now?",
     image: "/dashboards/operations-monitoring.png",
     overview:
       "Operational analytics dashboard for monitoring production, costs, and performance against targets.",
@@ -95,6 +101,7 @@ export const dashboards: DashboardItem[] = [
     id: "ecommerce-01",
     name: "E-commerce Sales Dashboard",
     industry: "E-commerce",
+    caption: "What is selling, to whom, and where?",
     image: "/dashboards/ecommerce-sales.png",
     overview:
       "Power BI dashboard for monitoring e-commerce sales, workforce activity, and operational metrics.",

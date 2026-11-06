@@ -191,7 +191,7 @@ export default function ContactForm() {
                   htmlFor="contact-name"
                   className="mb-2 block text-xs font-semibold uppercase tracking-wider text-muted"
                 >
-                  Name
+                  Your name
                 </label>
                 <input
                   id="contact-name"
@@ -208,13 +208,13 @@ export default function ContactForm() {
                   htmlFor="contact-company"
                   className="mb-2 block text-xs font-semibold uppercase tracking-wider text-muted"
                 >
-                  Company
+                  Company (optional)
                 </label>
                 <input
                   id="contact-company"
                   name="company"
                   type="text"
-                  placeholder="Your company (optional)"
+                  placeholder="Your company"
                   className={inputCls}
                   autoComplete="organization"
                 />
@@ -245,14 +245,14 @@ export default function ContactForm() {
                 htmlFor="contact-message"
                 className="mb-2 block text-xs font-semibold uppercase tracking-wider text-muted"
               >
-                What are you looking to build?
+                What problem would you like solved?
               </label>
               <textarea
                 id="contact-message"
                 name="message"
                 required
                 rows={5}
-                placeholder="Tell us about your project, goals, and timelines…"
+                placeholder={'e.g. "We spend two days every month building reports from five different spreadsheets."'}
                 className={`${inputCls} resize-none`}
               />
             </div>
@@ -274,7 +274,7 @@ export default function ContactForm() {
               ) : (
                 <>
                   <Send className="size-4" aria-hidden="true" />
-                  Send Message
+                  Get my answer
                 </>
               )}
             </button>
