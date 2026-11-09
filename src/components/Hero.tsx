@@ -64,7 +64,7 @@ export default function Hero() {
               className="mb-4 text-xs font-semibold uppercase tracking-[0.18em] sm:text-sm"
               style={{ color: "#24B8FF", fontFamily: "var(--font-gambetta)" }}
             >
-              Backend, automation and AI development
+              Software Development, Automation and AI Systems
             </p>
             <h1
               className="max-w-[540px] text-[1.75rem] leading-[1.1] tracking-tight text-frost sm:text-4xl md:text-5xl lg:text-[3.35rem]"
@@ -87,7 +87,7 @@ export default function Hero() {
               className="mt-6 max-w-lg text-sm leading-relaxed sm:text-base md:text-lg"
               style={{ color: "#B0B8C8", fontFamily: "var(--font-gambetta)" }}
             >
-              DataNova Labz designs and builds the backend systems, integrations and AI tools that
+              DataNova Labz designs and builds the software systems, integrations and AI tools that
               connect your software, automate repetitive work and grow with your business. Need
               clear reporting on top? We build the dashboards too.
             </p>
