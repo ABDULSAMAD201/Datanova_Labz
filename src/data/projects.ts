@@ -39,7 +39,7 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: "aviation-weather-pipeline",
-    title: "Always-current weather for flight planning",
+    title: "Real-Time Weather monitoring for Flights",
     category: "Aviation",
     card: {
       problem:
