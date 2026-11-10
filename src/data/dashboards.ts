@@ -23,7 +23,7 @@ export const dashboards: DashboardItem[] = [
     caption: "Where are my numbers heading, and is anything behaving strangely?",
     image: "/dashboards/finance-performance.png",
     overview:
-      "Analytics dashboard for forecast monitoring, anomaly detection, and KPI analysis.",
+      "Tracks cost and CO₂ emissions against forecast month by month, with headline counters for total anomalies, warnings and normal periods. Chart panels overlay actual and forecast lines so any drift is immediately visible, and stacked breakdowns by category and month show exactly where the outliers sit, letting you trace a variance back to the cost line or emission source behind it.",
     capabilities: [
       "Forecast vs actual analysis",
       "Anomaly visualization",
@@ -39,7 +39,7 @@ export const dashboards: DashboardItem[] = [
     caption: "Are orders going out on time, and where are the delays?",
     image: "/dashboards/logistics-fulfillment.png",
     overview:
-      "Power BI dashboard for monitoring logistics and fulfillment performance.",
+      "Compares fulfilment volume, cost and commercial share against budget in a single view. Headline cards cover patients assisted, units shipped, cost per unit and the share handled commercially, while monthly trend lines track those measures against budget, a regional map splits activity by geography, and a combined chart contrasts volume trends with commercial share.",
     capabilities: [
       "KPI monitoring",
       "Trend analysis",
@@ -56,7 +56,7 @@ export const dashboards: DashboardItem[] = [
     caption: "How is the whole business doing, on one screen?",
     image: "/dashboards/healthcare-operations.png",
     overview:
-      "Executive dashboard providing a consolidated view of revenue, costs, profitability, and business performance.",
+      "Brings the whole business onto one screen: headline figures for revenue, costs, gross and net profit, cost ratio and profit margin, followed by monthly growth curves for revenue and profit, revenue plotted against margin by month, and revenue broken down by country. Industry filters let you re-cut every visual for a specific sector without touching the layout.",
     capabilities: [
       "Executive KPIs",
       "Revenue / profit trends",
@@ -72,7 +72,7 @@ export const dashboards: DashboardItem[] = [
     caption: "Where do potential customers drop off before buying?",
     image: "/dashboards/marketing-funnel.png",
     overview:
-      "Power BI dashboard for monitoring marketing performance and funnel activity.",
+      "Reads the marketing funnel from spend through to sale: headline cards cover production volume, cost of goods, cost per unit, spoilage cost, yield and sales, with month-by-month trend lines for cost, sales and production beneath them. Laying those lines side by side shows where cost climbs faster than output, and where volume stalls between stages.",
     capabilities: [
       "Funnel analysis",
       "KPI monitoring",
@@ -88,7 +88,7 @@ export const dashboards: DashboardItem[] = [
     caption: "What is slowing the team down right now?",
     image: "/dashboards/operations-monitoring.png",
     overview:
-      "Operational analytics dashboard for monitoring production, costs, and performance against targets.",
+      "Breaks operational spend down line by line, comparing each cost category against plan for the month with absolute and percentage variance on every row. Categories with a gap are highlighted so it is clear at a glance which line — production, utilities, labour or overhead — is driving the overspend, and how that gap shifts from one month to the next.",
     capabilities: [
       "Production KPIs",
       "Cost breakdown",
@@ -104,7 +104,7 @@ export const dashboards: DashboardItem[] = [
     caption: "What is selling, to whom, and where?",
     image: "/dashboards/ecommerce-sales.png",
     overview:
-      "Power BI dashboard for monitoring e-commerce sales, workforce activity, and operational metrics.",
+      "Tracks sales and workforce output side by side: utilisation and availability cards, planned versus actual days, and workload charts broken down by project and by employee. Trend lines for actual and planned hours reveal where capacity is being over- or under-used, so staffing levels can be judged against the sales and fulfilment numbers that depend on them.",
     capabilities: [
       "KPI monitoring",
       "Sales trends",

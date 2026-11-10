@@ -246,7 +246,9 @@ function DashboardTablet({
                 >
                   {item.name}
                 </p>
-                <p className="mt-1 text-xs leading-snug text-[#94a3b8]">{item.caption}</p>
+                <p className="mt-1 line-clamp-2 min-h-8 text-xs leading-4 text-[#94a3b8]">
+                  {item.caption}
+                </p>
               </div>
               <span className="shrink-0 rounded-full border border-[#38bdf8]/20 bg-[#38bdf8]/10 px-2.5 py-0.5 text-[11px] font-medium text-[#38bdf8] sm:text-xs">
                 {item.industry}
